@@ -7,7 +7,7 @@ Works with H2 database.
 ### Where to start
 Go to the page localhost:8080/graphiql
 
-### Example query
+### Example query and mutation
 Find all whiskies:
 ```
 query allWhiskies {
