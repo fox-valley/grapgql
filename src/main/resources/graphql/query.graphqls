@@ -1,0 +1,22 @@
+type Query {
+    allWhiskies: [Whisky]
+    whiskyById(id: ID): Whisky
+}
+
+type Mutation {
+    addWhisky(whisky: CreateWhiskyInput): Whisky
+}
+
+enum WhiskyType {
+    SCOTCH,
+    IRELAND,
+    JAPAN,
+    BOURBON
+}
+
+input CreateWhiskyInput {
+    id: ID
+    whiskyType: WhiskyType
+    name: String
+    age: Int
+}

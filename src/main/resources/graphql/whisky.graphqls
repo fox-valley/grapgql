@@ -1,0 +1,6 @@
+type Whisky {
+    id: ID!
+    whiskyType: String
+    name: String
+    age: Int
+}
